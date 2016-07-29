@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		svg{
+			width: 100%;
+			height: 200px;
+		}
+	</style>
+</head>
+<body>
+	<svg>
+		<defs>
+			<marker id="mCircle" markerWidth="10" markerHeight="10" refX="5" refY="5">
+				<circle cx="5" cy="5" r="4" fill="none" stroke="black"></circle>
+			</marker>
+
+			<marker id="mArrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+				<polyline points="0 0 10 5 0 10" fill="none" stroke="black"></polyline>
+			</marker>
+
+			<marker id="mTriangle" markerWidth="10" markerHeight="10" refX="5" refY="5">
+				<polygon points="0 0 10 0 5 10" fill="none" stroke="black"></polygon>
+			</marker>
+		</defs>
+
+		<path d="M 10 20 100 20 A 20 30 0 0 1 120 50 L 120 110" fill="none" stroke="black" marker-start="url(#mCircle)" marker-mid="url(#mArrow)" marker-end="url(#mTriangle)"></path>
+	</svg>
+</body>
+</html>
