@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+		svg{
+			width: 100%;
+			height: 300px;
+		}
+	</style>
+</head>
+<body>
+To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
+<pre>&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
+	<svg>
+		<!-- 定义一个二次贝塞尔曲线 -->
+		<path id="path" d="M10 30 Q 40 80 80 50 T 120 80" stroke="black" fill="none"></path>
+		<text>
+			<!-- 默认情况下会简化显示所有空格（换行、制表符） -->
+			<textPath xlink:href="#path" xml:space="preserve">some      test words....</textPath>
+		</text>
+	</svg>
+</body>
+</html>

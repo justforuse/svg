@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+		svg{
+			width: 100%;
+			height: 300px;
+		}
+	</style>
+</head>
+<body>
+	<svg>
+		<!-- 定义一个二次贝塞尔曲线 -->
+		<path id="path" d="M10 30 Q 40 80 80 50 T 120 80" stroke="black" fill="none"></path>
+		<text>
+			<textPath xlink:href="#path" startOffset="20%">some test words....</textPath>
+		</text>
+	</svg>
+</body>
+</html>
